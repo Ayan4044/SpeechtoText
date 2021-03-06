@@ -6,6 +6,10 @@ $(".btn-floating").click(function(){
     {
 $(this).addClass('pulse');
 voicesearch();
+M.toast({
+    html: "<strong><i class='far fa-check-circle'></i>Say Something!!</strong>",
+    classes: ' success_toast '
+  });
     }
 });
 function checkBrowser(){
@@ -47,7 +51,7 @@ function voicesearch(){
       else{
         searchenabled=false;
         M.toast({
-            html: "<strong><i class='far fa-check-circle'></i>Sorry!! Browser doesn't support voice search </strong>",
+            html: "<strong><i class='far fa-check-circle'></i>Something went wrong!! </strong>",
             classes: ' error_toast '
           });
         }
