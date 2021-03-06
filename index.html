@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/material.min.css">
+        <link rel="stylesheet" href="css/style.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div class="container">
+        
+          
+
+                <div class="row">
+                    <div class="col s12 m4 l2"></div>
+    <div class="col s12 m4 l8">
+      
+        <div class="center-align ">
+            <form class="col s12 " id="center_content">
+                <div class="row">
+                  <div class="input-field col s10">
+                    <input id="speech_text" type="text" placeholder="Type or Speach anything...">
+                  
+                  </div>
+                  <div class="input-field col s2">
+                    <a class="btn-floating btn-large cyan "><i class="material-icons">settings_voice</i></a>
+                  </div>
+                </div>
+                </form>
+
+
+        
+     </div>
+    </div>
+    <div class="col s12 m4 l2"></div>
+              
+                        
+          
+          
+          </div>
+          </div>
+       
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/material.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+      </script>
+        <script src="js/custom.js">
+           
+         
+        </script>
+    </body>
+  </html>
+
+
+<!-- <style>
+    .speech {
+      border: 1px solid #DDD;
+      width:300px;
+      padding:0;
+      margin:0
+    }
+
+    .speech input {
+      border:0;
+      width:240px;
+      display:inline-block;
+      height:30px;
+      font-size: 14px;
+    }
+
+    .speech img {
+      float:right;
+      width:40px
+    }
+
+  </style>
+
+  <form id="labnol">
+    <div class="speech">
+      <input type="text" name="s" id="transcript" placeholder="Say Something"/>
+      <img onclick="startDictation()" src="https://i.imgur.com/cHidSVu.gif" />
+    </div>
+  </form>
+
+  <script>
+
+    function startDictation() {
+
+      if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+        var recognition = new webkitSpeechRecognition();
+
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = "en-US";
+        recognition.start();
+
+        recognition.onresult = function (e) {
+          document.getElementById('transcript').value = e.results[0][0].transcript;
+          recognition.stop();
+          document.getElementById('labnol').submit();
+        };
+        recognition.onerror = function(e) {
+          recognition.stop();
+        }
+      }
+    }
+
+  </script> -->

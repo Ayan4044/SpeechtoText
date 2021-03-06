@@ -1,0 +1,29 @@
+body{
+    background: #D7E1EC;
+}
+
+
+#center_content{
+    height: 100%;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    background: #fafafa;
+    box-sizing: inherit;
+    margin-top: 40%;
+}
+
+/*------------- Material toast ---------------------*/
+.error_toast {
+    background-color: #f44336;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    width: 100% !important;
+  }
+  .success_toast {
+    background-color: #64ffda;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+  }
