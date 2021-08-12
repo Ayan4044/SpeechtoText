@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var searchenabled=false;
     checkBrowser();
+    $(this).addClass('pulse');
 $(".btn-floating").click(function(){
     if(searchenabled)
     {
@@ -14,8 +15,11 @@ M.toast({
 });
 function checkBrowser(){
 if (navigator.userAgent.search("Chrome") >= 0){
-   
+  $(this).addClass('pulse');
     searchenabled=true;
+    console.log({"status":searchenabled});
+  //  voicesearch();
+  enableSearch();
 }
 else{
     M.toast({
@@ -24,6 +28,18 @@ else{
       });
 }
 
+}
+
+function enableSearch(){
+  if(searchenabled)
+  {
+$('.btn-floating').addClass('pulse');
+voicesearch();
+M.toast({
+  html: "<strong><i class='far fa-check-circle'></i>Say Something to search.</strong>",
+  classes: ' success_toast '
+});
+  }
 }
 
 function voicesearch(){
