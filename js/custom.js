@@ -49,7 +49,7 @@ function voicesearch(){
 
         recognition.continuous = false;
         recognition.interimResults = false;
-        recognition.lang = "en-US";
+        recognition.lang = "en-IN";
         recognition.start();
 
         recognition.onresult = function (e) {
